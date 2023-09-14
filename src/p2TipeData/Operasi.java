@@ -7,6 +7,8 @@ public class Operasi {
         int angka1 = 10;
         int angka2 = 5;
         int hasil;
+        System.out.println("===================");
+        System.out.println(angka2 + angka2);
 
         // 1. Penjumlahan
         hasil = angka1 + angka2;

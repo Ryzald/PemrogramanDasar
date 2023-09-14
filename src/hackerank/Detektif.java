@@ -10,12 +10,17 @@ public class Detektif {
         double expense = sc.nextDouble();
         sc.nextLine();
         String kerja = sc.nextLine();
+
         System.out.println("---------------------------------------");
         System.out.printf("|%-20s:%17s|\n", "Nama Pelaku", nama);
-        System.out.printf("|%-20s:%17s|\n", "Tempat Kejadian", tkp);
+        System.out.printf("%s%17s|", "|Tempat Kejadian     :", tkp);
         System.out.printf("|%-20s:%16.2f%s|\n", "Kerugian", expense, "$");
         System.out.printf("|%-20s:%17s|\n", "Tanggal Kejadian", kerja);
         System.out.println("---------------------------------------");
+
+        // System.out.println("---------------------------------------");
+        // System.out.printf("|%-20s:%17s|\n", "Tempat Kejadian", tkp);
+        sc.close();
 
     }
 }

@@ -13,9 +13,10 @@ public class Calculator {
         double kali = input1 * input2;
 
         System.out.printf("%-8s:%+10.2f\n", "TAMBAH", tambah);
-        System.out.printf("%-8s:%+10.2f\n", "KURANG", kurang);
+        System.out.printf("%s%+10.2f\n", "KURANG  :", kurang);
         System.out.printf("%-8s:%+10.2f\n", "BAGI", bagi);
         System.out.printf("%-8s:%+10.2f\n", "KALI", kali);
         sc.close();
+
     }
 }
