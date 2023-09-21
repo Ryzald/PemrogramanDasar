@@ -36,6 +36,7 @@ public class Percabangan {
 
         // keterbacaan
         int angka2 = 3;
+
         if (angka2 != 6) {
             int umur = 21; // keterbacaan
             System.out.println(true);
@@ -44,11 +45,21 @@ public class Percabangan {
             System.out.println(false);
         }
 
-        System.out.println(umur);
+        // System.out.println(umur); " tidak bisa karena pembuatan int umur didalam
+        // ifelse if"
+        int umur = 60;
+        if (umur <= 17) {
+            System.out.println("anda dibawah umur");
+        } else if (umur > 17 && umur < 40) {
+            System.out.println("anda cukup umur");
+        } else if (umur > 40 && umur < 100) {
+            System.out.println("anda terlalu tua");
+        } else {
+            System.out.println("umur anda melebihi batas");
+        }
 
         // switch case
 
         // ternary "variable = (condition) ? expressionTrue : expressionFalse;"
-
     }
 }
