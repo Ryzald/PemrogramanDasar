@@ -1,5 +1,7 @@
 package p3SeleksiKondisi;
 
+import java.util.Scanner;
+
 public class Percabangan {
     public static void main(String[] args) {
 
@@ -59,6 +61,45 @@ public class Percabangan {
         }
 
         // switch case
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukkan angka antara 1 hingga 3:");
+        int nomor = input.nextInt();
+        // SC1
+        switch (nomor) {
+            case 1:
+                System.out.println("Anda memasukkan angka 1.");
+                break;
+            case 2:
+                System.out.println("Anda memasukkan angka 2.");
+                break;
+            case 3:
+                System.out.println("Anda memasukkan angka 3.");
+                break;
+            default:
+                System.out.println("Angka yang Anda masukkan tidak valid.");
+                break;
+        }
+        // SC2
+        String hari = input.nextLine();
+
+        switch (hari) {
+            case "senin":
+                System.out.println("Ini adalah hari kerja.");
+                break;
+            case "selasa":
+            case "rabu":
+            case "kamis":
+            case "jumat":
+                System.out.println("Ini adalah hari kerja juga ternyata.");
+                break;
+            case "sabtu":
+            case "minggu":
+                System.out.println("Ini adalah hari libur.");
+                break;
+            default:
+                System.out.println("Input tidak valid.");
+                break;
+        }
 
         // ternary "variable = (condition) ? expressionTrue : expressionFalse;"
     }
