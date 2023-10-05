@@ -60,7 +60,14 @@ public class Percabangan {
             System.out.println("umur anda melebihi batas");
         }
 
-        // switch case
+        // ternary "variable = (condition) ? expressionTrue : expressionFalse;"
+        int number = 10;
+        String hasil = (number % 2 == 0) ? "Genap" : "Ganjil";
+        System.out.println("Angka " + angka + " adalah " + hasil);
+
+        // switch case (case sensitive)
+        // percabangan kode program dimana kita membandingkan isi sebuah variabel dengan
+        // beberapa nilai
         Scanner input = new Scanner(System.in);
         System.out.println("Masukkan angka antara 1 hingga 3:");
         int nomor = input.nextInt();
@@ -101,6 +108,5 @@ public class Percabangan {
                 break;
         }
 
-        // ternary "variable = (condition) ? expressionTrue : expressionFalse;"
     }
 }
