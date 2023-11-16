@@ -1,0 +1,8 @@
+Penanganan Nilai Maksimum dalam Array
+
+    Deklarasikan array integer dengan nama myNumbers yang dapat menampung 5 elemen.
+    Inisialisasikan array tersebut dengan nilai-nilai acak antara 1 hingga 100.
+    Temukan nilai maksimum dalam array tersebut.
+    Tampilkan nilai maksimum beserta indeksnya.
+
+Silahkan jawab kuis di atas dengan menggunakan kode Java yang relevan.
