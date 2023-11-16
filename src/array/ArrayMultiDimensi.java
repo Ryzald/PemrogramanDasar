@@ -6,11 +6,12 @@ public class ArrayMultiDimensi {
     public static void main(String[] args) {
 
         /** SPLIT **/
-        String text = "Hello,World,Java";
+        String text = "Hello World Java";
 
         // Memisahkan String berdasarkan koma
-        String[] parts = text.split(",");
+        String[] parts = text.split(" ");
 
+        System.out.println(Arrays.toString(parts));
         // Menampilkan hasil
         for (String part : parts) {
             System.out.println(part);
@@ -38,6 +39,9 @@ public class ArrayMultiDimensi {
         System.out.println("Char array elements:");
         for (char c : charArray) {
             System.out.print(c + " ");
+            // output
+            // 0 1 2 3 4 5 6 7 8 9 10 11
+            // H e l l o , W o r l d
         }
 
     }
